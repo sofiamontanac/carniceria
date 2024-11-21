@@ -1,0 +1,431 @@
+* {
+  margin: 0 ;
+  padding: 0;
+  border: 0; 
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #DC143C;
+  --color-success: #08bf8c;
+  --color-warning:#f7c94b;
+  --color-danger:#f75842;
+  --color-danger-variant: rgba(247, 288, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #fff;
+  --color-bg1: #220303;
+  --color-bg2: #801818;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+}
+h4{
+  text-align: center;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: white;
+  background: #000000;
+  background-image:  url('imagenes/fondol.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0; 
+  padding: 0; 
+  text-align: center;
+  position: center;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+section {
+  padding: 6rem 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.4rem;
+   
+}
+h2 {
+  font-size: 1.0rem;
+}
+a{
+  color: var(--color-white);
+}
+img {
+  width: 80%;
+}
+.header_right-image img {
+  width: 300px;
+  height: auto;
+  margin-left: 100px; /* Ajusta este valor para mover la imagen más a la derecha */
+}
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+  padding: 1rem 2rem;
+  border: 1px splid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+/*---NAVEGADOR---*/
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.nav-scroll {
+  background: #220303;
+  box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
+}
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button{
+  display: none;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav_menu a{
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.nav_menu a:hover {
+  color: var(--color-bg2);
+}
+/*---Primer Cajon---*/
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Esto asegura que ocupe todo el alto disponible */
+  text-align: center;
+}
+
+.header_left p {
+  height: 1rem 0 2.4rem;
+}
+.btn {
+  background-color: #801818; 
+  color: #ffffff; 
+  
+}
+
+
+/*---Segundo Cajon Categorias---*/
+.categories {
+  background: var(--color-bg1);
+}
+
+.categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.categories_container {
+  display: flex; /* Cambiado a flex para distribuir los elementos en línea */
+  gap: 20px; /* Espacio entre los elementos */
+}
+.categories_container p {
+  margin: 1rem 0 3rem;
+}
+.btn {
+  color:  #fff;
+}
+.categories_left {
+  flex: 0 0 40%; /* 40% para la sección de categorías */
+}
+
+.categories_right {
+  display: flex; /* Usamos flex para los elementos dentro de categories_right */
+  flex: 1; /* Permite que este div ocupe el espacio restante */
+  gap: 20px; /* Espacio entre las categorías */
+}
+
+.category {
+  flex: 1; /* Asegura que cada categoría ocupe el mismo tamaño */
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+.category_icon img {
+  width: 32px;   /* Ajusta el ancho de la imagen */
+  height: 32px;  /* Ajusta la altura de la imagen */
+  object-fit: cover;  /* Asegura que la imagen mantenga su proporción */
+}
+
+.category:hover {
+  box-shadow: 0 3rem 3rem rgb(0, 0, 0, 0.3);
+}
+/* Tercer cajon */
+.course{
+  margin-top: 1rem;
+}
+.coursers_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary)
+}
+.course_left {
+  padding: 2rem;
+}
+.course_info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem ;
+}
+.swiper-container {
+  position: relative; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; 
+  position: absolute;
+  z-index: 10; 
+}
+
+.swiper-button-next {
+  right: -40px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+.swiper-button-prev {
+  left: -40px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+.course_info p {
+  line-height: 0.5; /* Ajusta el valor según lo necesites */
+}
+
+/* Cuarto cajon */
+.faqs {
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.faqs_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 2rem; /* Espaciado entre las preguntas */
+}
+
+.faq {
+  padding: 1rem; /* Reducimos el padding para compactar el artículo */
+  width: 90%; /* Ajustamos el ancho a un 90% del contenedor */
+  font-size: 0.95rem; /* Ajustamos ligeramente el tamaño del texto */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: var(--color-primary);
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; /* Centra el artículo en su contenedor */
+}
+
+.faq h4 {
+  font-size: 1rem; /* Ajustamos el tamaño del título */
+  line-height: 1.3;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.faq p {
+  font-size: 0.9rem; /* Reducimos el tamaño del contenido */
+  line-height: 1.4;
+  color: #f1f1f1;
+  margin-top: 0.3rem;
+}
+
+.faq_icon {
+  font-size: 1.2rem; /* Hacemos el ícono un poco más pequeño */
+  color: white;
+  align-self: flex-start;
+  margin-bottom: 0.8rem;
+}
+.faq:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design: Para dispositivos pequeños, muestra 1 artículo por fila */
+@media (max-width: 768px) {
+  .faqs_container {
+    grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
+  }
+}
+
+.faq p {
+margin-top: 0.8rem;
+display: none;
+}
+.faq.open  {
+  display: block;
+}
+.faq .question_answer p {
+  display: none;  /* Oculta el párrafo por defecto */
+}
+
+.faq.open .question_answer p {
+  display: block; /* Muestra el párrafo cuando se añade la clase 'open' */
+}
+/* Quinto cajon */
+.testimonial_container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.testimonial {
+  padding-top: 2rem;
+}
+.Avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.Avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto ajusta la imagen para que se recorte adecuadamente dentro del círculo */
+  object-position: center;
+}
+.testimonial_info {
+  text-align: center;
+}
+.testimonial_body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.testimonial_body::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    135deg,
+     transparent, 
+     var(--color-primary),
+     var(--color-primary), 
+     var(--color-primary));
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+
+/*FOOTHER*/
+.footer {
+  background: #801818;
+  padding-top: 5rem;
+  font-size: 0.9ram;
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+.footer_container > div h4 {
+  margin-bottom: 0 0 2rem;
+}
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
+.footer_socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.footer_copyright {
+  text-align: center;
+  margin-top: 4rem ;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
+}
+
+@media_screen and (max-width:1024px){
+
+nav_button {
+  display: inline-block;
+  background: transparent;
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+}

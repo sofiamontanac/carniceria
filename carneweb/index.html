@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/@iconscout/react-unicons@latest/dist/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+
+  <title>Carniceria</title>
+ 
+</head>
+
+<body>
+  <nav>
+    <div class="container nav_container">
+      <a href="index.html">
+
+      </a>
+      <ul class="nav_menu">
+        <li> <a href="index.html">Inicio</a>
+        <li> <a href="productos.html">Productos</a>
+        <li> <a href="coursers.html">Sobre Nosotros</a>
+        <li> <a href="contact.html">Contactenos</a>
+        </li>
+      </ul>
+      <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+      <button id="clase-menu-btn"><i class="fa-solid fa-xmark"></i></i></button>
+    </div>
+  </nav>
+  <!--PRIMER CAJON-->
+  <header>
+    <div class="container header_container">
+        <h1>Bienvenido a nuestra Carnicería</h1>
+    </div>
+  </header>
+  <!--SEGUNDO CAJON-->
+  <section class="categories">
+    <div class="container categories_container">
+      <div class="categories_left">
+        <h1>Carnicería Delicias de la Carne </h1>
+        <p>Ubicada en Calle Principal #123, ofrecemos una selección de carnes frescas y de alta calidad. Desde cortes
+          premium hasta
+          embutidos artesanales, garantizamos sabor y frescura en cada producto.
+          Nuestro amable personal está listo para ayudarte a elegir el corte perfecto. ¡Visítanos y descubre por qué
+          somos la
+          carnicería favorita de la comunidad!
+
+          Llámanos al (123) 456-7890 para pedidos y consultas. ¡Te esperamos!</p>
+        <a href="#" class="btn">Descubre más</a>
+      </div>
+      <div class="categories_right">
+        <article class="category">
+          <span class="category_icon"><img src="imagenes/chicken_8119013.png" alt=""></span>
+          <h5>POLLO</h5>
+          <P>Nuestra carne de pollo es fresca y sabrosa. Aporta nutrientes esenciales. </P>
+        </article>
+      </div>
+      <div class="categories_right">
+        <article class="category">
+          <span class="category_icon"><img src="imagenes/meat_7615375.png" alt=""></span>
+          <h5>CARNE</h5>
+          <P>Ofrecemos carne de cerdo de alta calidad, jugosa y tierna. Perfecta para asados o guisos.</P>
+        </article>
+      </div>
+      <div class="categories_right">
+        <article class="category">
+          <span class="category_icon"><img src="imagenes/clown-fish_874960.png" alt=""></span>
+          <h5>PESCADO</h5>
+          <P>Nuestro pescado es fresco y sostenible, rico en omega-3 y nutrientes.</P>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!--TERCER CAJON-->
+  <section class="corsers">
+    <h2>Más Populares</h2>
+    <div class="container">
+      <div class="swiper-container mySwiper">
+        <!-- Flechas de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/pulpac.jpeg" alt="Curso 1">
+              </div>
+              <div class="course_info">
+                <h4>Pulpa de Cerdo</h4>
+                <p>Precio: $8.490</p>
+                <p>Gramo: $16.98</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/costillac.jpeg" alt="Curso 2">
+              </div>
+              <div class="course_info">
+                <h4>Costilla de Cerdo</h4>
+                <p>Precio: $9.990</p>
+                <p>Gramo: $19.98</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/higado2.png" alt="Curso 3">
+              </div>
+              <div class="course_info">
+                <h4>Higado de Res</h4>
+                <p>Precio: $7.290</p>
+                <p>Gramo: $14.58</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/pechugap.jpg" alt="Curso 3">
+              </div>
+              <div class="course_info">
+                <h4>Pechuga</h4>
+                <p>Precio: $6.390</p>
+                <p>Gramo: $12.78</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/pernilp.jpg" alt="Curso 3">
+              </div>
+              <div class="course_info">
+                <h4>Pernil</h4>
+                <p>Precio: $3.550</p>
+                <p>Gramo: $7.10</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/muchacho.png" alt="Curso 3">
+              </div>
+              <div class="course_info">
+                <h4>Muchacho de Res</h4>
+                <p>Precio: $12.490</p>
+                <p>Gramo: $24.98</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/lomores.png" alt="Curso 3">
+              </div>
+              <div class="course_info">
+                <h4>Lomo de Res</h4>
+                <p>Precio: $15.990</p>
+                <p>Gramo: $31.98</p>
+                <a href="coursers.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course_image">
+                <img src="imagenes/muchacho.png" alt="Curso 3">
+              </div>
+              <div class="swiper-slide">
+                <article class="course">
+                  <div class="course_info">
+                    <h4>Milanesa de Res</h4>
+                    <p>Precio: $10.990</p>
+                    <p>Gramo: $21.98</p>
+                    <a href="coursers.html" class="btn btn-primary">Comprar</a>
+                  </div>
+                </article>
+              </div>
+  </section>
+
+  <!--CUARTO CAJON-->
+  <section class="faqs">
+    <h2>Descubre Nuestras recetas</h2>
+    <div class="faqs_container">
+
+      <article class="faq">
+        <div class="faq_icon"> <i class="fa-regular fa-plus"></i> </div>
+        <div class="question_answer">
+          <h4>Bistec a la Parrilla</h4>
+          <p>Sazona los bistecs con sal, pimienta y un toque de ajo en polvo. Calienta la parrilla a
+            fuego alto y cocina los bistecs durante 3-4 minutos por cada lado, dependiendo del grosor. Deja reposar unos
+            minutos antes de servir.</p>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="faq_icon"><i class="fa-regular fa-plus"></i> </div>
+        <div class="question_answer">
+          <h4>Guiso de Carne con Papas</h4>
+          <p>En una olla, sofríe cebolla, ajo y tomate. Añade cubos de carne de res y dora por todos
+            lados. Agrega papas cortadas, agua, zanahorias y laurel. Cocina a fuego lento durante 1 hora hasta que la
+            carne esté tierna y las papas cocidas..</p>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="faq_icon"><i class="fa-regular fa-plus"></i> </div>
+        <div class="question_answer">
+          <h4>Carne al Estilo Stroganoff</h4>
+          <p>Saltea tiras de carne de res con champiñones y cebolla. Añade caldo de res y crema agria.
+            Cocina a fuego medio hasta que la salsa espese, luego sirve sobre pasta o arroz.</p>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="faq_icon"> <i class="fa-regular fa-plus"></i></div>
+        <div class="question_answer">
+          <h4>Tacos de Carne Asada</h4>
+          <p>Marina la carne con jugo de limón, ajo, cilantro, sal y pimienta. Asa a la parrilla por
+            ambos lados y corta en tiras finas. Sirve en tortillas con guacamole, cebolla y cilantro.</p>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="faq_icon"><i class="fa-regular fa-plus"></i> </div>
+        <div class="question_answer">
+          <h4>Albóndigas en Salsa de Tomate</h4>
+          <p>Mezcla carne molida con ajo, cebolla, pan rallado y huevo. Forma albóndigas y fríelas en una sartén. Luego,
+            agrégales salsa de tomate casera y cocina a fuego lento durante 20 minutos. Sirve con arroz o pasta.</p>
+        </div>
+      </article>
+
+      <article class="faq">
+        <div class="faq_icon"> <i class="fa-regular fa-plus"></i> </div>
+        <div class="question_answer">
+          <h4>Salteado de Carne y Vegetales</h4>
+          <p>Corta tiras de carne y saltéalas con brócoli, zanahoria y pimientos en una sartén caliente con aceite de
+            sésamo. Añade salsa de soya y cocina hasta que los vegetales estén crujientes y la carne cocida. Sirve con
+            arroz blanco.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!--QUINTO CAJON-->
+
+  <section class="container testimonials_Container mySwiper">
+    <h2>Testimonios de nuestros Clientes</h2>
+    <div class="swiper-wrapper">
+      <article class="testimonial swiper-slide">
+        <div class="Avatar">
+          <img src="imagenes/avatar1.jpg" alt="">
+        </div>
+        <div class="testimonial_info">
+          <h5>Diana Celis</h5>
+          <small>Ama de Casa</small>
+        </div>
+        <div class="testimonial_body">
+          <p>"La mejor carnicería de la ciudad. Siempre encuentro productos frescos y de excelente calidad. La atención
+            al cliente es excepcional. Los precios son justos. Desde que empecé a comprar aquí, no he vuelto a
+            otra carnicería. ¡Recomendadísimo!"
+          </p>
+        </div>
+      </article>
+      <article class="testimonial swiper-slide">
+        <div class="Avatar">
+          <img src="imagenes/avatar4.jpg" alt="">
+        </div>
+        <div class="testimonial_info">
+          <h5>Sofia Montaña</h5>
+          <small>Ama de Casa</small>
+        </div>
+        <div class="testimonial_body">
+          <p>"La mejor carnicería de la ciudad. Siempre encuentro productos frescos y de excelente calidad. La atención
+            al cliente es excepcional. Los precios son justos. Desde que empecé a comprar aquí, no he vuelto a
+            otra carnicería. ¡Recomendadísimo!"
+          </p>
+        </div>
+      </article>
+      <article class="testimonial swiper-slide">
+        <div class="Avatar">
+          <img src="imagenes/avatar3.jpg" alt="">
+        </div>
+        <div class="testimonial_info">
+          <h5>Daniel Calderon</h5>
+          <small>Ama de Casa</small>
+        </div>
+        <div class="testimonial_body">
+          <p>"La mejor carnicería de la ciudad. Siempre encuentro productos frescos y de excelente calidad. La atención
+            al cliente es excepcional. Los precios son justos. Desde que empecé a comprar aquí, no he vuelto a
+            otra carnicería. ¡Recomendadísimo!"
+          </p>
+        </div>
+      </article>
+      <article class="testimonial swiper-slide">
+        <div class="Avatar">
+          <img src="imagenes/avatar5.jpg" alt="">
+        </div>
+        <div class="testimonial_info">
+          <h5>Sara Gonzales</h5>
+          <small>Ama de Casa</small>
+        </div>
+        <div class="testimonial_body">
+          <p>"La mejor carnicería de la ciudad. Siempre encuentro productos frescos y de excelente calidad. La atención
+            al cliente es excepcional. Los precios son justos. Desde que empecé a comprar aquí, no he vuelto a
+            otra carnicería. ¡Recomendadísimo!"
+          </p>
+        </div>
+      </article>
+      <article class="testimonial swiper-slide">
+        <div class="Avatar">
+          <img src="imagenes/avatar6.jpg" alt="">
+        </div>
+        <div class="testimonial_info">
+          <h5>Justin Biber</h5>
+          <small>Ama de Casa</small>
+        </div>
+        <div class="testimonial_body">
+          <p>"La mejor carnicería de la ciudad. Siempre encuentro productos frescos y de excelente calidad. La atención
+            al cliente es excepcional. Los precios son justos. Desde que empecé a comprar aquí, no he vuelto a
+            otra carnicería. ¡Recomendadísimo!"
+          </p>
+        </div>
+      </article>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer_container">
+      <div class="footer_1">
+        <a href="index.html" class="footer_logo">
+          <h4>CARNES</h4>
+        </a>
+        <p>Nuestra prioridad es vender carne de calidad, disfruta de nuestros productos.</p>
+      </div>
+      <div class="footer_2">
+        <h4>Permisos</h4>
+        <ul class="permolinks">
+          <li><a href="index.html">Inicio</a>
+          <li><a href="abaout.html">Sobre Nosotros</a>
+          <li><a href="coursers.html">Menú</a>
+          <li><a href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_3">
+        <h4>Primacy</h4>
+        <ul class="privacy">
+          <li><a href="#">Certificado de calisas </a></li>
+          <li><a href="#">Termminos y Condiciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer_4">
+        <h4>Contactos</h4>
+        <div>
+          <p>+57 323 526 6901</p>
+          <p>u20222208436@usco.edu.co</p>
+        </div>
+        <ul class="footer_socials">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="footer_copyright">
+      <small>Hecho por estudiantes de la Universidad Surcolombiana</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2
+        }
+      }
+    });
+  </script>
+  <div id="app"></div>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+
+</html>
